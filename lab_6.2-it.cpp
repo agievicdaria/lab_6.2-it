@@ -1,6 +1,7 @@
 #include <iostream>
 #include <climits>
 #include <ctime> 
+#include <iomanip>
 
 using namespace std;
 
@@ -12,7 +13,7 @@ void generateArray(int a[], int size, int low, int high) {
 
 void printArray(const int arr[], int n) {
     for (int i = 0; i < n; ++i) {
-        cout << arr[i] << " ";
+        cout << setw(4) << arr[i] << " ";
     }
     cout << endl;
 }
